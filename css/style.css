@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*закончила в 3:01:32*/
+/*закончила в 3:33:06*/
 html {
   box-sizing: border-box;
 }
@@ -31,6 +31,13 @@ a {
   color: inherit;
 }
 
+.section-title {
+  margin-bottom: 50px;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+}
+
 .container {
   max-width: 1220px;
   margin: 0 auto;
@@ -53,7 +60,7 @@ body {
 .header-main {
   background-color: transparent;
   position: absolute;
-  z-index: 5;
+  z-index: 10;
   left: 0;
   right: 0;
 }
@@ -189,4 +196,144 @@ body {
 .swiper-pagination-bullet-active {
   height: 6px;
   background-color: white;
+}
+
+.why-lease {
+  padding: 150px 0;
+}
+
+.why-lease__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  text-align: center;
+}
+
+.why-lease__item-img {
+  margin-bottom: 30px;
+}
+
+.why-lease__item-title {
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.why-lease__item-text {
+  text-align: left;
+}
+
+.how-does {
+  padding-bottom: 150px;
+}
+
+.how-does__inner {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.how-does__title {
+  font-size: 24px;
+  font-weight: 700;
+  padding-top: 50px;
+}
+
+.how-does__list {
+  padding: 50px 0 70px;
+  counter-reset: myCounter;
+}
+
+.how-does__item {
+  list-style: none;
+  width: 270px;
+  position: relative;
+  margin-left: auto;
+  box-sizing: content-box;
+  padding: 19px 0 19px 240px;
+  min-height: 63px;
+}
+
+.how-does__item + .how-does__item {
+  margin-top: 40px;
+}
+
+.how-does__item::before {
+  counter-increment: myCounter;
+  content: counter(myCounter);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0066FF;
+  font-size: 48px;
+  font-weight: 700;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  color: white;
+  left: 0;
+  top: 0;
+}
+
+.video {
+  padding-bottom: 150px;
+}
+
+.video__title {
+  margin-bottom: 20px;
+}
+
+.video__text {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.video__content {
+  margin: 0 auto;
+  display: block;
+}
+
+.important {
+  padding-bottom: 150px;
+}
+
+.important__title {
+  margin-bottom: 20px;
+}
+
+.important__text {
+  max-width: 580px;
+  margin: 0 auto 50px;
+}
+
+.important__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.important__item-img {
+  margin-bottom: 20px;
+}
+
+.contacts {
+  padding: 100px 0 150px;
+}
+
+.contacts__title {
+  margin-bottom: 20px;
+}
+
+.contacts__text {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 0 100px;
+}
+
+.form {
+  max-width: 580px;
+  margin: 0 auto;
 }

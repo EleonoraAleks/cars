@@ -1,4 +1,4 @@
-/*закончила в 3:01:32*/
+/*закончила в 3:33:06*/
 html
     box-sizing: border-box
 
@@ -25,6 +25,12 @@ a
     text-decoration: none
     color: inherit
 
+.section-title
+    margin-bottom: 50px
+    font-size: 48px
+    font-weight: 700
+    text-align: center
+
 .container
     max-width: 1220px
     margin: 0 auto
@@ -44,7 +50,7 @@ body
 .header-main
     background-color: transparent
     position: absolute
-    z-index: 5
+    z-index: 10
     left: 0
     right: 0
 
@@ -161,4 +167,98 @@ body
     background-color: white
 
 
+.why-lease
+    padding: 150px 0
+    &__list
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        gap: 40px
+        text-align: center
+    &__item-img
+        margin-bottom: 30px
+    &__item-title
+        margin-bottom: 30px
+        font-size: 24px
+        font-weight: 700
+    &__item-text
+        text-align: left
 
+.how-does
+    padding-bottom: 150px
+    &__inner
+        max-width: 600px
+        margin: 0 auto
+    &__title
+        font-size: 24px
+        font-weight: 700
+        padding-top: 50px
+    &__list
+        padding: 50px 0 70px
+        counter-reset: myCounter
+    &__item
+        list-style: none
+        width: 270px
+        position: relative
+        margin-left: auto
+        box-sizing: content-box
+        padding: 19px 0 19px 240px
+        min-height: 63px
+    &__item + &__item
+        margin-top: 40px
+    &__item::before
+        counter-increment: myCounter
+        content: counter(myCounter)
+        position: absolute
+        display: flex
+        justify-content: center
+        align-items: center
+        background-color: #0066FF
+        font-size: 48px
+        font-weight: 700
+        width: 100px
+        height: 100px
+        border-radius: 50%
+        color: white
+        left: 0
+        top: 0
+
+.video
+    padding-bottom: 150px
+    &__title
+        margin-bottom: 20px
+    &__text
+        font-size: 24px
+        font-weight: 700
+        margin-bottom: 50px
+        text-align: center
+    &__content
+        margin: 0 auto
+        display: block
+
+.important
+    padding-bottom: 150px
+    &__title
+        margin-bottom: 20px
+    &__text
+        max-width: 580px
+        margin: 0 auto 50px
+    &__list
+        display: grid
+        grid-template-columns: repeat(4,1fr)
+    &__item-img
+        margin-bottom: 20px
+
+.contacts
+    padding: 100px 0 150px
+    &__title
+        margin-bottom: 20px
+    &__text
+        font-size: 24px
+        font-weight: 700
+        text-align: center
+        margin-bottom: 50px
+        padding: 0 100px
+
+.form
+    max-width: 580px
+    margin: 0 auto
