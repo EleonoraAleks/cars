@@ -330,16 +330,68 @@ body
         color: #ffffff
         background-color: #0066FF
         padding: 4px 20px
-    &__link
-        text-transform: uppercase
-        background-color: #151515
-        padding: 13px
-        color: white
-        width: 225px
-        margin: 0 auto
-        text-align: center
-        /*чтобы отступ был не от букв, а от верхней границы кнопки*/
+
+.showmore-link
+    text-transform: uppercase
+    background-color: #151515
+    padding: 13px
+    color: white
+    width: 225px
+    margin: 0 auto
+    text-align: center
+    /*чтобы отступ был не от букв, а от верхней границы кнопки*/
+    display: block
+
+.choose
+    padding: 100px 0 150px
+
+.tabs
+    &__btn
+        padding: 0 150px
+        display: flex
+        justify-content: space-between
+        gap: 80px
+        padding-bottom: 100px
+    &__btn-item
+        font-size: 24px
+        font-weight: 700
+        cursor: pointer
+        border: none
+        background-color: transparent
+        padding: 0
+    &__btn-item--active
+        color: #0066FF
+    &__content-item
+        display: grid
+        grid-template-columns: repeat(4,1fr)
+        gap: 100px 40px
+        margin-bottom: 20px
+
+
+.card
+    text-align: center
+    &__content
+        padding: 0 5px
+        border: 1px solid #0066FF
+        border-top: 0
+    &__img
         display: block
+    &__title
+        font-size: 24px
+        font-weight: 700
+        margin-bottom: 20px
+        padding-top: 20px
+    &__text
+        margin-bottom: 20px
+    &__price
+        margin-bottom: 20px
+        font-weight: 700
+        font-size: 24px
+    &__link
+        display: block
+        color: #0066FF
+        border: 1px solid #0066FF
+        border-top: 0
 
 
 

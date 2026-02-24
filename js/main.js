@@ -9,3 +9,6 @@ const swiper = new Swiper(".swiper", {
     },
 
 });
+
+const tabItem = document.querySelectorAll('.tabs__btn-item');
+const tabContent = document.querySelectorAll('.tabs__content-item');
