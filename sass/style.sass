@@ -346,6 +346,7 @@ body
     padding: 100px 0 150px
 
 .tabs
+    margin-bottom: 70px
     &__btn
         padding: 0 150px
         display: flex
@@ -362,10 +363,13 @@ body
     &__btn-item--active
         color: #0066FF
     &__content-item
-        display: grid
+        display: none
         grid-template-columns: repeat(4,1fr)
         gap: 100px 40px
-        margin-bottom: 20px
+
+.tabs__content-item.tabs__content-item--active
+    display: grid
+
 
 
 .card
